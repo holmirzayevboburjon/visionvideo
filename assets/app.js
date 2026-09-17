@@ -2,6 +2,16 @@ const dialog = document.getElementById('leadDialog');
 const form = document.getElementById('leadForm');
 const submitButton = document.getElementById('submitButton');
 const status = document.getElementById('formStatus');
+const phoneInput = document.getElementById('phone');
+
+function keepUzbekPhonePrefix(input) {
+  const prefix = '+998 ';
+  const digits = input.value.replace(/\D/g, '').replace(/^998/, '').slice(0, 9);
+  input.value = prefix + digits;
+}
+
+phoneInput.addEventListener('focus', () => keepUzbekPhonePrefix(phoneInput));
+phoneInput.addEventListener('input', () => keepUzbekPhonePrefix(phoneInput));
 
 document.getElementById('openForm').addEventListener('click', () => {
   dialog.showModal();
@@ -25,7 +35,7 @@ form.addEventListener('submit', async (event) => {
 
   const data = new URLSearchParams({
     name: form.name.value.trim(),
-    phone: form.phone.value.trim(),
+    phone: phoneInput.value.trim(),
     source: 'Vision School',
     createdAt: new Date().toISOString()
   });

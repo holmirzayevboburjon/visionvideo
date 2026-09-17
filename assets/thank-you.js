@@ -1,6 +1,6 @@
 const VIDEO_ID = '2zA6n6oERDw';
-const REQUIRED_WATCH_SECONDS = 120;
-const STORAGE_KEY = 'vision_watched_' + VIDEO_ID;
+const REQUIRED_WATCH_SECONDS = 13 * 60;
+const STORAGE_KEY = 'vision_watched_13m_' + VIDEO_ID;
 const watchGate = document.getElementById('watchGate');
 const watchProgressBar = document.getElementById('watchProgressBar');
 const watchTime = document.getElementById('watchTime');
@@ -9,9 +9,19 @@ const amoDialog = document.getElementById('amoLeadDialog');
 const amoForm = document.getElementById('amoLeadForm');
 const amoSubmitButton = document.getElementById('amoSubmitButton');
 const amoFormStatus = document.getElementById('amoFormStatus');
+const amoPhoneInput = document.getElementById('amoPhone');
 let player;
 let watchTimer = null;
 let watchedSeconds = Math.min(Number(localStorage.getItem(STORAGE_KEY)) || 0, REQUIRED_WATCH_SECONDS);
+
+function keepUzbekPhonePrefix(input) {
+  const prefix = '+998 ';
+  const digits = input.value.replace(/\D/g, '').replace(/^998/, '').slice(0, 9);
+  input.value = prefix + digits;
+}
+
+amoPhoneInput.addEventListener('focus', () => keepUzbekPhonePrefix(amoPhoneInput));
+amoPhoneInput.addEventListener('input', () => keepUzbekPhonePrefix(amoPhoneInput));
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('youtubePlayer', {
@@ -73,7 +83,7 @@ amoForm.addEventListener('submit', async event => {
   const data = new URLSearchParams({
     action: 'amocrm',
     name: amoForm.name.value.trim(),
-    phone: amoForm.phone.value.trim(),
+    phone: amoPhoneInput.value.trim(),
     source: 'Vision School video'
   });
   amoSubmitButton.disabled = true;

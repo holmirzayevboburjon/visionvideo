@@ -9,7 +9,7 @@ body{margin:0;color:#050505;font-family:Arial,Helvetica,sans-serif}
 h1{margin:0;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(27px,5.65vw,39px);font-weight:900;line-height:1.13;letter-spacing:0}
 .headline-accent{color:#08a990;text-shadow:0 1px 0 rgba(0,0,0,.08)}
 .visual{position:relative;height:475px;margin-top:18px}
-.teacher{position:absolute;z-index:2;left:50%;bottom:0;width:min(84%,520px);height:auto;transform:translateX(-50%)}
+.teacher{position:absolute;z-index:2;left:50%;bottom:0;width:min(82%,480px);height:auto;transform:translateX(-50%)}
 .ielts-icon{position:absolute;z-index:3;display:grid;place-items:center;width:66px;height:66px;border:2px solid #d8e4f1;border-radius:20px;background:#fff;box-shadow:0 10px 24px rgba(6,31,77,.12)}
 .ielts-icon svg{width:42px;height:42px;fill:none;stroke:#092d63;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
 .ielts-icon svg circle{fill:#17bda5;stroke:none}

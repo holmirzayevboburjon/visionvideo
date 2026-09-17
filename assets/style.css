@@ -3,8 +3,8 @@
 html,body{background:#eef2f7}
 body{margin:0;color:#050505;font-family:Arial,Helvetica,sans-serif}
 .page{width:min(100%,694px);min-height:100vh;margin:0 auto;padding:22px 30px 46px;background:#fff;text-align:center;overflow:hidden}
-.brand{display:flex;align-items:center;justify-content:center;gap:13px;margin:0 auto 28px;color:#071f4d;font-size:clamp(29px,5.2vw,42px);font-weight:900;line-height:1;white-space:nowrap}
-.brand img{width:70px;height:70px;border-radius:50%;object-fit:cover}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 22px;color:#071f4d;font-size:clamp(25px,4.3vw,34px);font-weight:900;line-height:1;white-space:nowrap}
+.brand img{width:56px;height:56px;border-radius:50%;object-fit:cover}
 .brand span{letter-spacing:-1.2px}
 h1{margin:0;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(27px,5.65vw,39px);font-weight:900;line-height:1.13;letter-spacing:0}
 .headline-accent{color:#08a990;text-shadow:0 1px 0 rgba(0,0,0,.08)}
@@ -18,7 +18,7 @@ h1{margin:0;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(27px,5.
 .icon-chat{left:3%;bottom:16px}
 .cta,.submit{display:flex;width:82%;min-height:126px;margin:0 auto;align-items:center;justify-content:center;border:0;border-radius:22px;background:linear-gradient(105deg,#102e58,#073a7d,#102e58);box-shadow:0 9px 0 #08234b;color:#fff;font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(30px,5.8vw,43px);letter-spacing:2px;cursor:pointer}
 .cta:active,.submit:active{transform:translateY(4px);box-shadow:0 5px 0 #08234b}
-.offer{width:86%;margin:46px auto 0;padding:30px 25px;border:2px solid #a9ded4;border-radius:36px;background:linear-gradient(135deg,#e6f8f4,#c7eee6);box-shadow:0 12px 32px rgba(23,125,111,.13);color:#073c55;font-size:clamp(23px,4.65vw,32px);font-weight:700;line-height:1.28}
+.offer{width:86%;margin:34px auto 0;padding:24px 22px;border:2px solid #a9ded4;border-radius:32px;background:linear-gradient(135deg,#e6f8f4,#c7eee6);box-shadow:0 12px 32px rgba(23,125,111,.13);color:#073c55;font-size:clamp(19px,3.8vw,26px);font-weight:700;line-height:1.3}
 dialog{width:min(90%,520px);padding:0;border:0;border-radius:28px;box-shadow:0 26px 80px rgba(0,0,0,.3);line-height:normal}
 dialog::backdrop{background:rgba(2,17,42,.72);backdrop-filter:blur(3px)}
 dialog form{position:relative;padding:34px;text-align:left}
@@ -48,20 +48,20 @@ input:focus{border-color:var(--navy2);box-shadow:0 0 0 4px rgba(10,62,131,.12)}
 .register-button[hidden],.watch-gate[hidden]{display:none}
 .status.success{color:#08783e}
 
-@media(max-width:560px){.page{padding:16px 18px 38px}
-.brand{gap:9px;margin-bottom:23px;font-size:7.2vw}
-.brand img{width:54px;height:54px}
+@media(max-width:560px){.page{padding:12px 18px 30px}
+.brand{gap:7px;margin-bottom:14px;font-size:5.5vw}
+.brand img{width:40px;height:40px}
 .brand span{letter-spacing:-.8px}
-h1{font-size:5.85vw;line-height:1.14}
-.visual{height:75vw;min-height:295px;max-height:350px;margin-top:12px}
-.teacher{width:86%;max-width:355px}
+h1{font-size:6.15vw;line-height:1.13}
+.visual{height:75vw;min-height:295px;max-height:350px;margin-top:22px}
+.teacher{width:84%;max-width:345px}
 .ielts-icon{width:13vw;height:13vw;max-width:56px;max-height:56px;border-radius:16px}
 .ielts-icon svg{width:8vw;height:8vw;max-width:35px;max-height:35px}
 .icon-mic{left:3%;top:12%}
 .icon-headphones{right:2%;top:45%}
 .icon-chat{left:1%;bottom:2%}
 .cta{width:88%;min-height:92px;border-radius:18px;font-size:7.5vw}
-.offer{width:88%;margin-top:40px;padding:24px 16px;border-radius:29px;font-size:5.25vw}
+.offer{width:88%;margin-top:24px;padding:17px 15px;border-radius:25px;font-size:4.2vw;line-height:1.28}
 dialog form{padding:32px 22px}
 .form-brand{font-size:25px}
 .form-brand img{width:48px;height:48px}

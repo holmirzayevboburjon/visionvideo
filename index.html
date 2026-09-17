@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="15 daqiqada IELTS Speakingdan yuqori ball olish texnikasi">
+  <title>Vision School — IELTS Speaking</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x2='1' y2='1'%3E%3Cstop stop-color='%230a2857'/%3E%3Cstop offset='1' stop-color='%2324c8a5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M15 17h11l6 25 6-25h11L39 49H25z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+  <main class="design-shell">
+    <img class="design-image" src="assets/vision-design.png?v=6" width="694" height="1276" alt="Vision School — 15 daqiqada IELTS Speakingdan yuqori ball olish texnikasi">
+    <button class="design-hotspot" type="button" id="openForm" aria-label="Darsni ko‘rish va ro‘yxatdan o‘tish"></button>
+  </main>
+
+  <dialog id="leadDialog" aria-labelledby="formTitle">
+    <form id="leadForm" method="dialog">
+      <button class="close" type="button" id="closeForm" aria-label="Yopish">×</button>
+      <img class="form-logo" src="assets/logo.webp" alt="Vision School">
+      <h2 id="formTitle">Bepul darsni oling</h2>
+      <p>Ismingiz va telefon raqamingizni kiriting.</p>
+
+      <label for="name">Ismingiz</label>
+      <input id="name" name="name" type="text" autocomplete="name" placeholder="Ismingiz" required minlength="2">
+
+      <label for="phone">Telefon raqamingiz</label>
+      <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" required minlength="9">
+
+      <button class="submit" id="submitButton" type="submit">DARSNI OLISH</button>
+      <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <script src="assets/config.js?v=5"></script>
+  <script src="assets/app.js?v=4"></script>
+</body>
+</html>

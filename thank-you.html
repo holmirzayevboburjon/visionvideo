@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Maxsus taklif — Vision School</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b315f'/%3E%3Cpath d='M15 17h11l6 25 6-25h11L39 49H25z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css?v=7">
+</head>
+<body class="video-body">
+  <main class="video-page">
+    <img class="video-logo" src="assets/logo.webp" width="348" height="72" alt="Vision School">
+    <h1>Videoda berilgan maxsus taklifni qo‘lga kiritish uchun oxirigacha ko‘ring!</h1>
+    <div class="player-frame"><div id="youtubePlayer"></div></div>
+    <section class="watch-gate" id="watchGate">
+      <p>Ro‘yxatdan o‘tish tugmasi videoni 2 daqiqa ko‘rganingizdan keyin chiqadi.</p>
+      <div class="watch-progress" aria-label="Video ko‘rish jarayoni"><span id="watchProgressBar"></span></div>
+      <p class="watch-time" id="watchTime">Qoldi: 2:00</p>
+    </section>
+    <button class="register-button" id="openAmoForm" type="button" hidden>RO‘YXATDAN O‘TISH</button>
+  </main>
+
+  <dialog id="amoLeadDialog" aria-labelledby="amoFormTitle">
+    <form id="amoLeadForm" method="dialog">
+      <button class="close" type="button" id="closeAmoForm" aria-label="Yopish">×</button>
+      <img class="form-logo" src="assets/logo.webp" alt="Vision School">
+      <h2 id="amoFormTitle">Maxsus taklifga ro‘yxatdan o‘ting</h2>
+      <p>Ismingiz va telefon raqamingizni kiriting.</p>
+      <label for="amoName">Ismingiz</label>
+      <input id="amoName" name="name" type="text" autocomplete="name" placeholder="Ismingiz" required minlength="2">
+      <label for="amoPhone">Telefon raqamingiz</label>
+      <input id="amoPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" required minlength="9">
+      <button class="submit" id="amoSubmitButton" type="submit">RO‘YXATDAN O‘TISH</button>
+      <p class="status" id="amoFormStatus" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <script src="assets/config.js?v=7"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="assets/thank-you.js?v=7"></script>
+</body>
+</html>
